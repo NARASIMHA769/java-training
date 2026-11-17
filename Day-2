@@ -1,1 +1,271 @@
+control
+                                    |
+          --------------------------------------------------------
+          |                         |                            |
+        conditional               looping                     jumping
+         |                          |                            |
+         |-if                       |-for                        |-continue
+         |-If else                  |-while                      |-break
+         |-else if ladder           |-do while                   |-return 
+         |-nested if
+         |-swtich
+-------------------------------------------------------------------------------
+TERNERY OPERATOR
+import java.util.*;
+public class day2{
+    public static void main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter the number");
+    
+        int num=obj.nextInt();
+        String result=(num%2==0)?"Even":"Odd";
+        System.out.println(result);
+    }
+}
+-------------------------------------------------------------------------------
+ELSE IF LADDER
+public class day2{
+    public static void main(String[] args){
+int marks = 85;
 
+if (marks >= 90) {
+    System.out.println("Grade A");
+}
+else if (marks >= 75) {
+    System.out.println("Grade B");
+}
+else if (marks >= 60) {
+    System.out.println("Grade C");
+}
+else {
+    System.out.println("Fail");
+}
+}}
+-------------------------------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("----- COLLEGE DEPARTMENTS -----");
+        System.out.println("1. CSE");
+        System.out.println("2. ECE");
+        System.out.println("3. EEE");
+        System.out.println("4. MECH");
+        System.out.println("5. CIVIL");
+        System.out.println("6. IT");
+        System.out.println("7. AIDS");
+        System.out.println("8. AIML");
+        System.out.println("9. CSE (Cyber Security)");
+        System.out.println("10. CSE (Data Science)");
+        System.out.println("11. Biotechnology");
+        System.out.println("12. Chemical Engineering");
+        System.out.println("13. Automobile Engineering");
+        System.out.println("14. Aeronautical Engineering");
+        System.out.println("15. Mining Engineering");
+
+        System.out.print("Enter department number: ");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+
+            case 1:
+                System.out.println("Computer Science and Engineering");
+                break;
+
+            case 2:
+                System.out.println("Electronics and Communication Engineering");
+                break;
+
+            case 3:
+                System.out.println("Electrical and Electronics Engineering");
+                break;
+
+            case 4:
+                System.out.println("Mechanical Engineering");
+                break;
+
+            case 5:
+                System.out.println("Civil Engineering");
+                break;
+
+            case 6:
+                System.out.println("Information Technology");
+                break;
+
+            case 7:
+                System.out.println("Artificial Intelligence and Data Science");
+                break;
+
+            case 8:
+                System.out.println("Artificial Intelligence and Machine Learning");
+                break;
+
+            case 9:
+                System.out.println("Computer Science and Engineering (Cyber Security)");
+                break;
+
+            case 10:
+                System.out.println("Computer Science and Engineering (Data Science)");
+                break;
+
+            case 11:
+                System.out.println("Biotechnology Engineering");
+                break;
+
+            case 12:
+                System.out.println("Chemical Engineering");
+                break;
+
+            case 13:
+                System.out.println("Automobile Engineering");
+                break;
+
+            case 14:
+                System.out.println("Aeronautical Engineering");
+                break;
+
+            case 15:
+                System.out.println("Mining Engineering");
+                break;
+
+            default:
+                System.out.println("Invalid Department Number");
+        }
+
+        sc.close();
+    }
+}
+--------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class Calculator{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+
+            case 1:
+                System.out.println("Addition = " + (a + b));
+                break;
+
+            case 2:
+                System.out.println("Subtraction = " + (a - b));
+                break;
+
+            case 3:
+                System.out.println("Multiplication = " + (a * b));
+                break;
+
+            case 4:
+                if (b != 0) {
+                    System.out.println("Division = " + (a / b));
+                } else {
+                    System.out.println("Cannot divide by zero");
+                }
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+        }
+
+        sc.close();
+    }
+}
+----------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter month number (1-12): ");
+        int month = sc.nextInt();
+
+        switch (month) {
+
+            case 1:
+                System.out.println("January - 31 days");
+                break;
+
+            case 2:
+                System.out.println("February - 28 or 29 days");
+                break;
+
+            case 3:
+                System.out.println("March - 31 days");
+                break;
+
+            case 4:
+                System.out.println("April - 30 days");
+                break;
+
+            case 5:
+                System.out.println("May - 31 days");
+                break;
+
+            case 6:
+                System.out.println("June - 30 days");
+                break;
+
+            case 7:
+                System.out.println("July - 31 days");
+                break;
+
+            case 8:
+                System.out.println("August - 31 days");
+                break;
+
+            case 9:
+                System.out.println("September - 30 days");
+                break;
+
+            case 10:
+                System.out.println("October - 31 days");
+                break;
+
+            case 11:
+                System.out.println("November - 30 days");
+                break;
+
+            case 12:
+                System.out.println("December - 31 days");
+                break;
+
+            default:
+                System.out.println("Invalid month number");
+        }
+
+        sc.close();
+    }
+}
+-----------------------------------------------------------------------------------------------------------
+
+public class Table {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("5 x " + i + " = " + (5 * i));
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------
